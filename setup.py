@@ -9,7 +9,7 @@ setup(
     This name will be used when people try to do pip install. And it is CASE SENSITIVE. 
     You should create an unique name. Search on pypi.org to see if the name is taken or not.
     '''
-    name = 'YourPackageName', 
+    name = 'survival-analysis-datasets', 
     
     '''
     The version number of your package consists of three integers "Major.Minor.Patch".
@@ -22,12 +22,12 @@ setup(
     '''
     This is the short description will show on the top of the webpage of your package on pypi.org
     '''
-    description = 'An NLP python package for computing Boilerplate score and many other text features.',
+    description = 'Easy loader for datasets in Survival Analysis.',
     
     '''
     This is the name of your main module file. No need to include the .py at the end.
     '''    
-    py_modules = ["TheModuleName"],
+    py_modules = ["data_loader"],
     
     '''
     Leave it as default. It shows where the module is stored.
@@ -45,8 +45,8 @@ setup(
     '''
     Change the author name(s) and email(s) here.
     '''
-    author = 'AuthorName',
-    author_email = 'xyz123@something.com',
+    author = 'Christian Marius Lillelund',
+    author_email = 'chr1000@gmail.com',
     
     '''
     Leave the following as default. It will show the readme and changelog on the main page of your package.
@@ -57,7 +57,7 @@ setup(
     '''
     The url to where your package is stored for public view. Normally, it will be the github url to the repository you just forked.
     '''
-    url='https://github.com/jinhangjiang/morethansentiments',
+    url='https://github.com/thecml/survival-analysis-datasets',
     
     '''
     Leave it as deafult.
@@ -74,19 +74,17 @@ setup(
     
     '''
     classifiers  = [
-        'Development Status :: 4 - Beta',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
-        "License :: OSI Approved :: BSD License",
+        "License :: OSI Approved :: MIT License",
         'Intended Audience :: Developers',
         'Intended Audience :: Other Audience',
         'Intended Audience :: Science/Research',
         'Intended Audience :: Education',
-        'Topic :: Text Processing',
-        'Operating System :: Microsoft :: Windows',
+        'Topic :: Scientific/Engineering :: Artificial Intelligence',
         'Operating System :: OS Independent',
     ],
     
@@ -108,6 +106,6 @@ setup(
     '''
     The keywords of your package. It will help users to find your package on pypi.org
     '''
-    keywords = ['Text Mining', 'Data Science', ...],
+    keywords = ['Survival Analysis', 'Machine Learning', 'Datasets'],
     
 )
