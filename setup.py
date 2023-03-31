@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'survival-datasets', 
-    version = '0.1.2',
+    version = '0.1.4',
     description = 'Data loader for common datasets in Survival Analysis.',
     packages = find_packages(where="src"),
     package_dir={"": "src"},
