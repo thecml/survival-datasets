@@ -6,7 +6,7 @@ setup(
     description = 'Data loader for common datasets in Survival Analysis.',
     py_modules = ["survdata"],
     package_dir = {'':'src'},
-    package_data = {'': ['data/*.feather', 'data/*.csv']}
+    package_data = {'': ['data/*.feather', 'data/*.csv']},
     author = 'Christian Marius Lillelund',
     author_email = 'chr1000@gmail.com',
     
