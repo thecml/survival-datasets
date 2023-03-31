@@ -16,8 +16,7 @@ def convert_to_structured(T, E):
     return np.array(concat, dtype=default_dtypes)
 
 def load_seer_dataset():
-    resource_path = '/'.join(('data', 'seer.csv'))
-    resource = pkg_resources.resource_stream(resource_package, resource_path)    
+    resource = pkg_resources.resource_stream(resource_package, 'seer.csv')    
     data = pd.read_csv(resource)
 
     outcomes = data.copy()
@@ -42,8 +41,7 @@ def load_nhanes_dataset():
     return (X, y)
 
 def load_support_dataset():
-    resource_path = '/'.join(('data', 'support.feather'))
-    resource = pkg_resources.resource_stream(resource_package, resource_path)    
+    resource = pkg_resources.resource_stream(resource_package, 'support.feather')    
     data = pd.read_feather(resource)
 
     outcomes = data.copy()
@@ -89,8 +87,7 @@ def load_gbsg2_dataset():
     return (X, y)
 
 def load_metabric_dataset():
-    resource_path = '/'.join(('data', 'metabric.feather'))
-    resource = pkg_resources.resource_stream(resource_package, resource_path)    
+    resource = pkg_resources.resource_stream(resource_package, 'metabric.feather')
     data = pd.read_feather(resource)
 
     outcomes = data.copy()

@@ -1,12 +1,12 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name = 'survival-datasets', 
-    version = '0.1.0',
+    version = '0.1.2',
     description = 'Data loader for common datasets in Survival Analysis.',
-    py_modules = ["survdata"],
-    package_dir = {'':'src'},
-    package_data = {'': ['data/*.feather', 'data/*.csv']},
+    packages = find_packages(where="src"),
+    package_dir={"": "src"},
+    include_package_data=True,
     author = 'Christian Marius Lillelund',
     author_email = 'chr1000@gmail.com',
     
@@ -14,8 +14,6 @@ setup(
     long_description_content_type = "text/markdown",
 
     url='https://github.com/thecml/survival-datasets',
-    
-    include_package_data=True,
 
     classifiers  = [
         'Programming Language :: Python :: 3',
