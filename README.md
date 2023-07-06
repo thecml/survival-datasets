@@ -1,6 +1,6 @@
 # survival-datasets
 
-A simple data loader for the most common datasets in Survival Analysis. Currently the following are included: 
+A simple data loader for the most common datasets in survival analysis. Currently the following are included: 
 * Veterans Lung Cancer (https://scikit-survival.readthedocs.io/en/stable/api/generated/sksurv.datasets.load_veterans_lung_cancer.html)
 * German Breast Cancer Study Group (GBSG2) (https://scikit-survival.readthedocs.io/en/stable/api/generated/sksurv.datasets.load_gbsg2.html)
 * AIDS dataset (https://scikit-survival.readthedocs.io/en/stable/api/generated/sksurv.datasets.load_aids.html)
