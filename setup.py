@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'survival-datasets', 
-    version = '0.1.4',
+    version = '0.1.5',
     description = 'Data loader for common datasets in Survival Analysis.',
     packages = find_packages(where="src"),
     package_dir={"": "src"},
@@ -31,11 +31,11 @@ setup(
     ],
     
     install_requires = [
-        'scikit-survival ~= 0.17.2',
-        'pandas ~= 1.4.3',
-        'numpy ~= 1.22.4',
-        'shap ~= 0.41.0',
-        'pyarrow ~= 11.0.0',
+        'scikit-survival ~= 0.17',
+        'pandas ~= 1.4',
+        'numpy ~= 1.22',
+        'shap ~= 0.41',
+        'pyarrow ~= 11.0',
     ],
     
     keywords = ['Survival Analysis', 'Datasets'],
